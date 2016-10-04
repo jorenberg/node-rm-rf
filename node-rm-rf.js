@@ -45,3 +45,5 @@ const assert    = require('assert');
 // -------------------------------
 var glob        = require('glob');
 var command     = require('shelly');
+// ---------------------------------
+var timeout     = 0;
