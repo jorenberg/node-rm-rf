@@ -26,3 +26,4 @@
 //  SOFTWARE.
 
 // "disallowMultipleSpaces": {"allowEOLComments": true}
+// "disallowSemicolons": false
