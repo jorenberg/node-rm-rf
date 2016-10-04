@@ -42,3 +42,5 @@ const path      = require('path');
 const util      = require('util');
 const exec      = require('child_process').exec;
 const assert    = require('assert');
+// -------------------------------
+var glob        = require('glob');
