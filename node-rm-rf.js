@@ -29,3 +29,8 @@
 // "disallowSemicolons": false
 // "requireSemicolons": true
 // "requireSpaceAfterLineComment": { "allExcept": ["#", "="] }
+
+/* global __dirname: true */
+/* global require: true */
+/* global module: true */
+/* global process: true */
