@@ -34,3 +34,6 @@
 /* global require: true */
 /* global module: true */
 /* global process: true */
+
+// load required modules.
+const fs        = require('fs');
