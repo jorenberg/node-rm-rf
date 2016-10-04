@@ -44,3 +44,4 @@ const exec      = require('child_process').exec;
 const assert    = require('assert');
 // -------------------------------
 var glob        = require('glob');
+var command     = require('shelly');
