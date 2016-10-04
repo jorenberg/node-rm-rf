@@ -22,3 +22,6 @@
  * --/The Heart of Build System/-- of "node-rm-rf®".
  * ____________________________________________________________________
  */
+
+// # Usage: $ node -v
+// # Usage: $ npm -v
