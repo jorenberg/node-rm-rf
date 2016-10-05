@@ -47,3 +47,8 @@ var glob        = require('glob');
 var command     = require('shelly');
 // ---------------------------------
 var timeout     = 0;
+// ---------------------------------
+var defaultGlobOptions = {
+  nosort: true,
+  silent: true
+}
