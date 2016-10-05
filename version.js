@@ -45,3 +45,8 @@ if (!(os.platform() === "darwin" || os.platform() === "freebsd" || os.platform()
 if (!path.resolve(path.join(__dirname,'./package.json'))) {
   console.log(error('package.json is not found in the root directory!'));
 };
+// To export version in to the environment of node-rm-rf®.
+// To display node-rm-rf version.
+exports.version = function() {
+  console.log(okay('node-rm-rf v' + pkg.version));
+};
