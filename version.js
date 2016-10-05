@@ -41,3 +41,7 @@ const path  = require('path');
 if (!(os.platform() === "darwin" || os.platform() === "freebsd" || os.platform() === "sunos")) {
   console.log(error('We need to at least MacOS, FreeBSD or SunOS!'));
 };
+// To check 'package.json'.
+if (!path.resolve(path.join(__dirname,'./package.json'))) {
+  console.log(error('package.json is not found in the root directory!'));
+};
