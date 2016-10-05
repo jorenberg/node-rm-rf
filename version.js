@@ -31,3 +31,6 @@
 var pkg = require('./package.json');
 // Terminal string styling done right. Much color.
 var chalk = require('chalk');
+// Default color defined.
+const error = chalk.red;
+const okay  = chalk.green;
