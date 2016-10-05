@@ -62,3 +62,9 @@ var chalk       = require('chalk');
 const error     = chalk.red;
 const okay      = chalk.green;
 const pass      = chalk.blue;
+
+// To check running platform.
+if (!(os.platform() === "darwin" || os.platform() === "freebsd" || os.platform() === "sunos")) {
+  console.log(error('Howdy! — Error!'));
+  throw new Error(message + "\n" + "(You have \"" + os.platform() + "\")!");
+}
