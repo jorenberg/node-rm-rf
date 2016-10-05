@@ -27,3 +27,5 @@
 
 //  Invoking strict mode.
 "use strict";
+//  Project metadata.
+var pkg = require('./package.json');
