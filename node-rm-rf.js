@@ -35,7 +35,7 @@
 /* global module: true */
 /* global process: true */
 
-// load required modules.
+// load required Node modules.
 const fs        = require('fs');
 const os        = require('os');
 const path      = require('path');
@@ -55,4 +55,4 @@ var defaultGlobOptions = {
 // ---------------------------------
 var isWindows   = (process.platform === "win32");
 // Global Scope Variables
-var message     = "node-rm-rf — supported under Mac-darwin and Linux only!"
+var message     = "node-rm-rf — supported under Mac-darwin and Linux only!";
