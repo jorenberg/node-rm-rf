@@ -34,3 +34,5 @@ var chalk = require('chalk');
 // Default color defined.
 const error = chalk.red;
 const okay  = chalk.green;
+// load required Node modules.
+const os    = require('os');
