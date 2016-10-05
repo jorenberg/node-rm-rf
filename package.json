@@ -1,0 +1,51 @@
+{
+  "name": "node-rm-rf",
+  "version": "1.0.0",
+  "description": "\"The Node.js® based UNIX command for (like `rm -rf`).\"",
+  "main": "node-rm-rf.js",
+  "scripts": {
+    "test": "tap test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamprabhat/node-rm-rf.git"
+  },
+  "keywords": [
+    "Node",
+    "UNIX",
+    "rm -rf"
+  ],
+  "author": "Prabhat Kumar <prabhat.genome@gmail.com> (http://prabhatkumar.org/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iamprabhat/node-rm-rf/issues"
+  },
+  "homepage": "https://github.com/iamprabhat/node-rm-rf#readme",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "bin.js",
+    "node-rm-rf.js",
+    "version.js"
+  ],
+  "bin": "./bin.js",
+  "dependencies": {
+    "glob": "^7.1.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-dev-update": "^2.0.0",
+    "jscs": "^3.0.6",
+    "jshint": "^2.9.2",
+    "load-grunt-tasks": "^3.5.2",
+    "mkdirp": "^0.5.1",
+    "tap": "^7.1.2",
+    "time-grunt": "^1.4.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}
