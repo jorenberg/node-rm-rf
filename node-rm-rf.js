@@ -52,3 +52,5 @@ var defaultGlobOptions = {
   nosort: true,
   silent: true
 }
+// ---------------------------------
+var isWindows   = (process.platform === "win32");
