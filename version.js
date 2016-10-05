@@ -36,3 +36,4 @@ const error = chalk.red;
 const okay  = chalk.green;
 // load required Node modules.
 const os    = require('os');
+const path  = require('path');
