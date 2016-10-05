@@ -58,3 +58,7 @@ var isWindows   = (process.platform === "win32");
 var message     = "node-rm-rf — supported under Mac-darwin and Linux only!";
 // Terminal string styling done right. Much color.
 var chalk       = require('chalk');
+// Default color defined.
+const error     = chalk.red;
+const okay      = chalk.green;
+const pass      = chalk.blue;
