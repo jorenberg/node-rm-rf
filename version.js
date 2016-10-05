@@ -29,3 +29,5 @@
 "use strict";
 //  Project metadata.
 var pkg = require('./package.json');
+// Terminal string styling done right. Much color.
+var chalk = require('chalk');
