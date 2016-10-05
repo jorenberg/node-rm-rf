@@ -37,3 +37,7 @@ const okay  = chalk.green;
 // load required Node modules.
 const os    = require('os');
 const path  = require('path');
+// To check the supporting O/S platform.
+if (!(os.platform() === "darwin" || os.platform() === "freebsd" || os.platform() === "sunos")) {
+  console.log(error('We need to at least MacOS, FreeBSD or SunOS!'));
+};
