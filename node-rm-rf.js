@@ -54,3 +54,5 @@ var defaultGlobOptions = {
 }
 // ---------------------------------
 var isWindows   = (process.platform === "win32");
+// Global Scope Variables
+var message     = "node-rm-rf — supported under Mac-darwin and Linux only!"
