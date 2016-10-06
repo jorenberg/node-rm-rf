@@ -35,6 +35,9 @@
 /* global module: true */
 /* global process: true */
 
+// Invoking strict mode.
+"use strict";
+
 // load required Node modules.
 const fs        = require('fs');
 const os        = require('os');
