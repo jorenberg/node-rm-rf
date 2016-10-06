@@ -71,3 +71,30 @@ if (!(os.platform() === "darwin" || os.platform() === "freebsd" || os.platform()
   console.log(error('Howdy! — Error!'));
   throw new Error(message + "\n" + "(You have \"" + os.platform() + "\")!");
 }
+
+function defaults (options) {
+  var methods = [
+    'unlink',
+    'chmod',
+    'stat',
+    'lstat',
+    'rmdir',
+    'readdir'
+  ];
+  
+  methods.forEach(function(m) {
+    options[m] = options[m] || fs[m];
+    m = m + 'Sync';
+    options[m] = options[m] || fs[m];
+  });
+  
+  options.maxBusyTries = options.maxBusyTries || 3;
+  options.emfileWait = options.emfileWait || 1000;
+  
+  if (options.glob === false) {
+    options.disableGlob = true;
+  }
+  
+  options.disableGlob = options.disableGlob || false;
+  options.glob = options.glob || defaultGlobOptions;
+}
