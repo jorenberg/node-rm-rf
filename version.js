@@ -66,3 +66,9 @@ exports.help = function() {
   exports.helpFooter();
   process.exit();
 };
+
+// Help header.
+exports.helpHeader = function() {
+  console.log(okay('node-rm-rf: ' + pkg.description + ' (v' + pkg.version + ')'));
+  console.log('\n');
+};
