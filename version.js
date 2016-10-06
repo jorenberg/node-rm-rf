@@ -50,3 +50,12 @@ if (!path.resolve(path.join(__dirname,'./package.json'))) {
 exports.version = function() {
   console.log(okay('node-rm-rf v' + pkg.version));
 };
+
+// Show help, then exit with a message and error code.
+exports.fatal = function(msg, code) {
+  exports.helpHeader();
+  console.log(error('Fatal error: ' + msg));
+  console.log('\n');
+  exports.helpFooter();
+  process.exit(code);
+};
