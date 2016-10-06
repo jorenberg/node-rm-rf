@@ -59,3 +59,10 @@ exports.fatal = function(msg, code) {
   exports.helpFooter();
   process.exit(code);
 };
+
+// Show help and exit.
+exports.help = function() {
+  exports.helpHeader();
+  exports.helpFooter();
+  process.exit();
+};
