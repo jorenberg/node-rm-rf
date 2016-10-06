@@ -72,3 +72,17 @@ exports.helpHeader = function() {
   console.log(okay('node-rm-rf: ' + pkg.description + ' (v' + pkg.version + ')'));
   console.log('\n');
 };
+
+// Help footer.
+exports.helpFooter = function() {
+  [
+    'Howdy!',
+    'If you\'re seeing this message, node hasn\'t been installed locally to',
+    'your project. For more information about installing and configuring node,',
+    'please see the Getting Started guide:',
+    '\n',
+    'https://github.com/iamprabhat/node-rm-rf#readme',
+  ].forEach(function(str) {
+    console.log(okay(str));
+  });
+};
