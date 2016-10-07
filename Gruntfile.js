@@ -132,3 +132,8 @@ module.exports = function(grunt) {
       }
     }
   });
+  // ====================================
+  // Grunt Task Registration through API.
+  // ====================================
+  // @method: grunt.registerTask(task-name)
+  grunt.registerTask('build', ['jshint']);
