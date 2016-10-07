@@ -146,3 +146,5 @@ module.exports = function(grunt) {
   
   // By default, lint, clean and run all tests.
   grunt.registerTask('default', ['test']);
+  
+  // On watch events configure 'jshint:all' to only run on changed file.
