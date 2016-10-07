@@ -39,3 +39,4 @@
 
 // load required NPM modules.
 var chalk = require('chalk');
+var okay  = chalk.magenta;
