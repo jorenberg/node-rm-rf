@@ -42,3 +42,7 @@ var chalk = require('chalk');
 var okay  = chalk.magenta;
 
 module.exports = function(grunt) {
+  
+  // time-grunt
+  // Display the elapsed execution time of grunt tasks.
+  require('time-grunt')(grunt);
