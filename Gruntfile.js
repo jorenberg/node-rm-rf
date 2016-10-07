@@ -50,3 +50,6 @@ module.exports = function(grunt) {
   // load-grunt-tasks
   // Load multiple grunt tasks using globbing patterns.
   require('load-grunt-tasks')(grunt);
+  
+  // Project configuration.
+  grunt.initConfig({
