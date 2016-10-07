@@ -143,3 +143,6 @@ module.exports = function(grunt) {
   grunt.registerTask('update', ['devUpdate']);
   
   grunt.registerTask('release', ['bump']);
+  
+  // By default, lint, clean and run all tests.
+  grunt.registerTask('default', ['test']);
