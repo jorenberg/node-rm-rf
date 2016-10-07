@@ -59,3 +59,18 @@ module.exports = function(grunt) {
     // 3. — watch
     // 4. — update
     // 5. — bump
+    
+    // JSHint is a program that flags suspicious usage in programs written in JavaScript.
+    jshint: {
+      all: [
+        'Gruntfile.js',
+        './node-rm-rf.js',
+        './version.js',
+        './bin.js',
+        './test/*.js',
+        '!node_modules/**/*.js'
+      ],
+      options: {
+        jshintrc: '.jshintrc'
+      }
+    },
