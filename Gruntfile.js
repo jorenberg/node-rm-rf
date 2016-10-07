@@ -79,3 +79,17 @@ module.exports = function(grunt) {
     clean: {
       test: ['tmp', '*.temp', '*.log']
     },
+    
+    // Run predefined tasks whenever watched file patterns are added, changed or deleted.
+    watch: {
+      options: {
+        dateFormat: function(time) {
+          grunt.log.writeln(okay('The watch finished in ' + time + 'ms at — ' + (new Date()).toString() + '.'));
+          grunt.log.writeln(okay('Waiting for more changes...'));
+        },
+      },
+      scripts: {
+        files: ['Gruntfile.js', './**/*.js', '!node_modules/**/*.js'],
+        tasks: ['jshint', 'clean']
+      }
+    },
