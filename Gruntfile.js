@@ -74,3 +74,8 @@ module.exports = function(grunt) {
         jshintrc: '.jshintrc'
       }
     },
+    
+    // Before generating any new files, remove any previously-created files.
+    clean: {
+      test: ['tmp', '*.temp', '*.log']
+    },
