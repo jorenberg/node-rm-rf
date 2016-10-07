@@ -37,6 +37,7 @@
     "grunt-cli": "^1.2.0",
     "grunt-contrib-clean": "^1.0.0",
     "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-watch": "0.6.1",
     "grunt-dev-update": "^2.0.0",
     "jscs": "^3.0.6",
     "jshint": "^2.9.2",
