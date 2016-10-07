@@ -139,3 +139,5 @@ module.exports = function(grunt) {
   grunt.registerTask('build', ['jshint']);
   
   grunt.registerTask('test', ['jshint', 'clean', 'watch']);
+  
+  grunt.registerTask('update', ['devUpdate']);
