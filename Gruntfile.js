@@ -148,3 +148,6 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['test']);
   
   // On watch events configure 'jshint:all' to only run on changed file.
+  grunt.event.on('watch', function(action, filepath) {
+    grunt.config('jshint.all.src', filepath);
+  });
