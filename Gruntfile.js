@@ -137,3 +137,5 @@ module.exports = function(grunt) {
   // ====================================
   // @method: grunt.registerTask(task-name)
   grunt.registerTask('build', ['jshint']);
+  
+  grunt.registerTask('test', ['jshint', 'clean', 'watch']);
