@@ -53,3 +53,9 @@ module.exports = function(grunt) {
   
   // Project configuration.
   grunt.initConfig({
+    // Defined Task(s):—
+    // 1. — jshint
+    // 2. — clean
+    // 3. — watch
+    // 4. — update
+    // 5. — bump
