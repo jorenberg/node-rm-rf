@@ -46,3 +46,7 @@ module.exports = function(grunt) {
   // time-grunt
   // Display the elapsed execution time of grunt tasks.
   require('time-grunt')(grunt);
+  
+  // load-grunt-tasks
+  // Load multiple grunt tasks using globbing patterns.
+  require('load-grunt-tasks')(grunt);
