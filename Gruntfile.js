@@ -93,3 +93,20 @@ module.exports = function(grunt) {
         tasks: ['jshint', 'clean']
       }
     },
+    
+    // Automate the updating of your 'package.json' packages with a grunt task.
+    devUpdate: {
+      main: {
+        options: {
+          updateType: 'prompt', // just report outdated packages
+          reportUpdated: false, //  don't report up-to-date packages
+          semver: true, //  stay within semver when updating
+          packages: {
+            devDependencies: true, // only check for devDependencies
+            dependencies: false // only check for dependencies
+          },
+          packageJson: null, // use matchdep default findup to locate 'package.json'
+          reportOnlyPkgs: [] // use updateType action on all packages
+        }
+      }
+    },
