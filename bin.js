@@ -55,3 +55,5 @@ var version		= require('./version.js');
 var noop      = chalk.grey;
 var okay      = chalk.green;
 var yeap      = chalk.blue;
+// Date objects.
+var d         = new Date();
