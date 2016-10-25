@@ -32,3 +32,17 @@
 
 // loading required main module.
 var nodermrf  = require('./');
+
+var help      = false;
+var dashdash  = false;
+var args      = process.argv.slice(2).filter(function(arg) {
+  if (dashdash) {
+    return !!arg;
+  } else if (arg === '--') {
+    dashdash = true;
+  } else if (arg.match(/^(-+|\/)(h(elp)?|\?)$/)) {
+    help = true;
+  } else {
+    return !!arg;
+  }
+});
