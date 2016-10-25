@@ -46,3 +46,6 @@ var args      = process.argv.slice(2).filter(function(arg) {
     return !!arg;
   }
 });
+
+// Terminal string styling done right. Much color.
+var chalk     = require('chalk');
