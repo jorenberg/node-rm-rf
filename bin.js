@@ -29,3 +29,6 @@
 //  SOFTWARE.
 
 'use strict';
+
+// loading required main module.
+var nodermrf  = require('./');
