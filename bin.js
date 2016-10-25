@@ -51,3 +51,7 @@ var args      = process.argv.slice(2).filter(function(arg) {
 var chalk     = require('chalk');
 // Calling node-rm-rf® — version sub-module.
 var version		= require('./version.js');
+// Color defaults.
+var noop      = chalk.grey;
+var okay      = chalk.green;
+var yeap      = chalk.blue;
