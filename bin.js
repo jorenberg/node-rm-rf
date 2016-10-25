@@ -50,10 +50,30 @@ var args      = process.argv.slice(2).filter(function(arg) {
 // Terminal string styling done right. Much color.
 var chalk     = require('chalk');
 // Calling node-rm-rf® — version sub-module.
-var version		= require('./version.js');
+var version   = require('./version.js');
 // Color defaults.
 var noop      = chalk.grey;
 var okay      = chalk.green;
 var yeap      = chalk.blue;
 // Date objects.
 var d         = new Date();
+
+if (help || args.length === 0) {
+  // If they didn't ask for help, then this is not a "success"!
+  var log = help ? console.log : console.error;
+  log(noop('├--------------------------------------------------------'));
+  log(yeap('| ' + d));
+  log(noop('├--------------------------------------------------------'));
+  log(okay('| Author: Prabhat Kumar — prabhat.genome@gmail.com       '));
+  log(yeap('| Usage: node-rm-rf® <path> [<path> ...]' + '\n' + '|'));
+  log(okay('| √ Deletes all files and folders at "path" recursively.' + '\n' + '|'));
+  log(yeap('| ‡ Options:' + '\n' + '|'));
+  log(okay('|   -h, --help    Display this usage information.'));
+  log(okay('|   -v, --version    Display version information.'));
+  log(noop('└--------------------------------------------------------'));
+  
+  process.exit(help ? 0 : 1);
+  
+} else {
+  go(0);
+}
