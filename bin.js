@@ -77,3 +77,15 @@ if (help || args.length === 0) {
 } else {
   go(0);
 }
+
+function go (n) {
+  if (n >= args.length) {
+    return;
+  }
+  nodermrf(args[n], function (er) {
+    if (er) {
+      throw er;
+    }
+    go(n + 1);
+  });
+}
